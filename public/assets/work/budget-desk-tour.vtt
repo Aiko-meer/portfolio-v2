@@ -1,0 +1,76 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:19.371
+Welcome to Budget Desk
+Welcome to Budget Desk, your private workspace for personal finance. It follows a semi-monthly pay cycle, the fifteenth and the end of the month, and tracks expenses, budgets, bills, savings goals, and every account balance. Everything stays on your own machine. Let's walk through every screen.
+
+2
+00:00:19.471 --> 00:00:45.066
+Dashboard · the payday picture
+This is the dashboard, built around your current pay period. The hero shows this payday's savings target, how much you have already put away, and the progress bar between them. The status chip tells you whether you met, missed, or beat the target. Below it, four cards summarize the period: net income, bills still due, safe to spend after setting savings aside, and the daily allowance for the remaining days.
+
+3
+00:00:45.166 --> 00:01:09.611
+Charts & recent activity
+Further down, the charts bring the period to life. The first shows money in and money out, day by day. The second shows your savings balance growing over time. Recent activity lists every expense, payday, and transfer, with signed amounts: cyan for money moving into savings, red for spending. The green button in the corner is quick add, and it follows you on every page.
+
+4
+00:01:09.711 --> 00:01:32.267
+Quick add · expenses from anywhere
+Quick add is the fastest way to record a purchase. Enter the amount, choose a category, and pick the account the money came from. Set the date, which cannot be in the future, and add an optional note. Save, and the expense is recorded instantly with a confirmation toast. Balances, budgets, and the dashboard all update on the spot.
+
+5
+00:01:32.367 --> 00:01:54.053
+Expenses · the full ledger
+The Expenses page is the complete ledger. Every row shows the date, category, account, note, and amount. Use the filters to isolate a category or an account, or reset them to see everything. Each entry can be edited or deleted. Because balances are always computed from transactions, corrections flow through the whole app automatically.
+
+6
+00:01:54.153 --> 00:02:14.368
+Paydays · every 15th and month-end
+On Paydays, you record each salary: gross pay, net pay, the account it landed in, and notes. Every payday starts a new pay period that runs until the day before the next scheduled payday. The table shows the savings advice generated for each period, so you can compare what you planned against what you actually saved.
+
+7
+00:02:14.468 --> 00:02:38.359
+Bills · recurring obligations
+Bills manages your recurring obligations. Set a name, amount, category, paying account, and due day. Mark as paid creates a real expense dated today and links it to the bill, so it counts in budgets and reports. The due day clamps to the end of short months, so a thirty-first due date becomes the twenty-eighth or twenty-ninth in February. Bills can be paused without losing their history.
+
+8
+00:02:38.459 --> 00:02:59.085
+Budgets · monthly category limits
+Budgets are monthly spending limits per category. Choose the month, type an amount for each category, and save. You can copy the previous month's plan in one click, or apply suggested defaults based on your expenses. The bars show actual spending against each limit, and the totals at the top show how much of the plan is committed.
+
+9
+00:02:59.185 --> 00:03:25.025
+Savings · advice on every payday
+Savings is the heart of the app. Every payday, the advisor calculates a target: twenty percent of net pay, rounded to the nearest hundred pesos. You can change the rate and rounding in Settings. The hero compares saved versus target for the current period. Goals, like an emergency fund or a trip, show progress, target amounts, and remaining days. Tagged withdrawals reduce goal progress honestly.
+
+10
+00:03:25.125 --> 00:03:44.801
+Save now · move money to savings
+Save now moves money from a spending account into a savings account. Choose the amount, the source and destination, optionally tag a goal, and add a note. The contribution counts immediately toward this period's savings advice. When a goal crosses one hundred percent, confetti celebrates the milestone.
+
+11
+00:03:44.901 --> 00:04:10.551
+Accounts · every balance in one place
+Accounts shows every bank account, e-wallet, and cash wallet in one place. Balances are computed, never typed: opening balance, plus salary, minus expenses, plus transfers in, minus transfers out. Transfer money between accounts, or open a per-account ledger to audit every movement. Flag an account as savings, and transfers into it count toward your savings record.
+
+12
+00:04:10.651 --> 00:04:28.538
+Reports · the monthly review
+Reports rolls everything into a calendar month. The summary shows income, expenses, net saved, and unallocated cash. Use the arrows to change month, and export the month as a C S V file for a spreadsheet. Next, the visual breakdown.
+
+13
+00:04:28.638 --> 00:04:45.999
+Reports · charts and budget performance
+Two charts show daily cash flow and cumulative savings over the month. Below them, the category breakdown ranks where the money went, and budget performance compares every limit against actual spending. It is the fastest way to see which category needs attention before the next payday.
+
+14
+00:04:46.099 --> 00:05:07.684
+Settings · make it yours
+Settings makes the app yours. Set the currency, the savings percentage, the rounding step, and how many months of expenses your emergency fund should cover. Toggle between dark and light themes. Download a complete J S O N export of your data, or write a timestamped backup of the database, which is ideal before big changes.
+
+15
+00:05:07.784 --> 00:05:22.367
+Tour complete
+That's Budget Desk. Local, private, and shaped around the fifteenth and month-end pay cycle. Log your first payday, add today's expenses, and let the advisor handle the math. Your data stays with you.

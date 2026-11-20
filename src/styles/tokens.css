@@ -1,0 +1,45 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #070709;
+  --bg-elev: #0b0b0e;
+  --surface: #101014;
+  --surface-2: #141419;
+
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+
+  --text: #f4f4f6;
+  --text-dim: #a8a8b2;
+  --text-faint: #767681;
+
+  --crimson: #d9192b;
+  --crimson-bright: #ff3046;
+  --crimson-ink: #ff6b7a;
+  --crimson-deep: #7d0d18;
+
+  --ok: #6ee7a8;
+
+  --font-display: 'Space Grotesk Variable', 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --shell: min(1200px, calc(100vw - 72px));
+
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --nav-h: 78px;
+  --z-nav: 50;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --shell: min(1200px, calc(100vw - 40px));
+    --nav-h: 68px;
+  }
+}

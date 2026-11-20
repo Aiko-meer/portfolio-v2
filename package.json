@@ -1,0 +1,22 @@
+{
+  "name": "zedvora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "assets": "node scripts/build-assets.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.8"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "lenis": "^1.3.27",
+    "three": "^0.187.0"
+  }
+}

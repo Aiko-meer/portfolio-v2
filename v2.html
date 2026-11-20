@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZEDVORA — Systems Atelier · V2</title>
+    <meta
+      name="description"
+      content="ZEDVORA builds custom web systems, business platforms, and thesis software in Zamboanga City — designed to simplify workflows and solve real problems."
+    />
+    <meta name="theme-color" content="#060608" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ZEDVORA — Systems Atelier" />
+    <meta
+      property="og:description"
+      content="Custom web systems, business platforms, and thesis software. Designed to simplify workflows and solve real problems."
+    />
+    <meta property="og:image" content="/assets/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/v2-hero-poster.webp"
+      media="(min-width: 1001px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/v2-hero-poster-tablet.webp"
+      media="(min-width: 761px) and (max-width: 1000px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/v2-hero-poster-mobile.webp"
+      media="(max-width: 760px)"
+    />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="preload"
+      href="/fonts/space-grotesk-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script>
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('js-motion');
+        window.setTimeout(function () {
+          document.documentElement.classList.add('js-motion-fallback');
+        }, 3000);
+      }
+    </script>
+    <noscript>
+      <style>
+        /* Without JS the curtain menu cannot open; hide its inert trigger. */
+        .nav__toggle {
+          display: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top" class="is-v2">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__grid"></div>
+      <div class="ambient__glow ambient__glow--a"></div>
+      <div class="ambient__glow ambient__glow--b"></div>
+      <div class="ambient__grain"></div>
+    </div>
+
+    <header class="nav" data-nav>
+      <div class="nav__inner">
+        <a class="brand" href="#top" aria-label="ZEDVORA — Systems Atelier, back to top">
+          <span class="brand__mark-wrap" data-brand-sweep>
+            <img
+              class="brand__mark"
+              src="/assets/logo-mark-192.webp"
+              srcset="
+                /assets/logo-mark-96.webp   96w,
+                /assets/logo-mark-192.webp 192w,
+                /assets/logo-mark-384.webp 384w
+              "
+              sizes="44px"
+              width="192"
+              height="124"
+              alt=""
+            />
+          </span>
+          <span class="brand__type">
+            <span class="brand__name">ZEDVORA</span>
+            <span class="brand__sub">Systems atelier</span>
+          </span>
+        </a>
+
+        <p class="nav__meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          Open for select projects
+        </p>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="v2-nav"
+          data-menu-toggle
+        >
+          <span class="nav__toggle-label">Menu</span>
+          <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        <nav id="v2-nav" class="nav__menu" data-menu aria-label="Primary">
+          <ul class="nav__links">
+            <li>
+              <a href="#work" data-nav-link><span class="nav__index">01</span>Work</a>
+            </li>
+            <li>
+              <a href="#capabilities" data-nav-link><span class="nav__index">02</span>Capabilities</a>
+            </li>
+            <li>
+              <a href="#contact" data-nav-link><span class="nav__index">03</span>Contact</a>
+            </li>
+          </ul>
+          <div class="nav__actions">
+            <a class="nav__version" href="/index.html" title="Open the previous version">
+              V1 live <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="btn btn--primary nav__cta"
+              href="mailto:zedvorastudio@gmail.com?subject=Project%20inquiry%20%E2%80%94%20ZEDVORA"
+            >
+              Start a project <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="nav__menu-foot">
+            <p>zedvorastudio@gmail.com</p>
+            <p>Zamboanga City, PH</p>
+            <a href="/index.html">Compare with V1 <span aria-hidden="true">↗</span></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="hero__stage" data-hero-scene aria-hidden="true">
+          <div class="hero__poster"></div>
+          <div class="hero__pulse"></div>
+          <div class="hero__canvas-wrap"><canvas id="hero-canvas"></canvas></div>
+          <div class="hero__grid"></div>
+          <div class="hero__scan"></div>
+          <div class="hero__vignette"></div>
+        </div>
+
+        <div class="hero__frame" aria-hidden="true">
+          <span class="hero__corner hero__corner--tl"></span>
+          <span class="hero__corner hero__corner--tr"></span>
+          <span class="hero__corner hero__corner--bl"></span>
+          <span class="hero__corner hero__corner--br"></span>
+          <p class="hero__frame-label">Fig. 01 — System core</p>
+          <p class="hero__frame-note">Rendered live · Three.js</p>
+        </div>
+
+        <p class="hero__rail" aria-hidden="true">Zamboanga City — 06°54′N 122°04′E</p>
+
+        <div class="shell hero__inner">
+          <div class="hero__copy" data-hero-copy>
+            <p class="hero__kicker">
+              <span class="kicker-mark" aria-hidden="true"></span>
+              Independent software studio · Zamboanga City
+            </p>
+
+            <h1 class="hero__title" id="hero-title">
+              <span class="hero__line"><span class="hero__line-inner">Digital systems.</span></span>
+              <span class="hero__line hero__line--dim"
+                ><span class="hero__line-inner">Built around</span></span
+              >
+              <span class="hero__line hero__line--accent"
+                ><span class="hero__line-inner">your needs.</span></span
+              >
+            </h1>
+
+            <p class="hero__lede">
+              Modern web platforms, business systems, and custom applications — designed to turn
+              ideas into functional digital experiences.
+            </p>
+
+            <div class="hero__actions">
+              <a
+                class="btn btn--primary"
+                href="mailto:zedvorastudio@gmail.com?subject=Project%20inquiry%20%E2%80%94%20ZEDVORA"
+              >
+                Start a project <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="btn btn--ghost" href="#work">
+                Explore the work <span class="btn__arrow" aria-hidden="true">↓</span>
+              </a>
+            </div>
+
+            <p class="hero__signature">
+              Zaeed N. Cervantes <span aria-hidden="true">/</span> Full-stack developer · Vibe coder
+            </p>
+          </div>
+
+          <aside class="hero__aside" aria-label="Studio snapshot">
+            <p class="hero__aside-label">The stack is the subject</p>
+            <p class="hero__aside-copy">
+              Five layers, one system. Built to be read, used, and maintained.
+            </p>
+            <dl class="hero__specs">
+              <div><dt>Focus</dt><dd>Web systems &amp; platforms</dd></div>
+              <div><dt>Stack</dt><dd>Laravel · React · MySQL</dd></div>
+              <div><dt>Based</dt><dd>Zamboanga City, PH</dd></div>
+              <div>
+                <dt>Local</dt>
+                <dd><span data-local-time>--:--</span> · PHT</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="shell hero__foot">
+          <a class="scroll-cue" href="#capabilities">
+            <span class="scroll-cue__line" aria-hidden="true"></span>
+            <span class="scroll-cue__label">Scroll to explore</span>
+          </a>
+          <p class="hero__coords">06°54′N 122°04′E — Zamboanga City</p>
+          <p class="hero__version">Atelier / V2 — 2026</p>
+        </div>
+      </section>
+
+      <section id="capabilities" class="section capabilities" aria-labelledby="capabilities-title">
+        <div class="shell">
+          <header class="section-head">
+            <p class="eyebrow" data-reveal="rise">
+              <span class="eyebrow__dot" aria-hidden="true"></span>02 — Capabilities
+            </p>
+            <h2 class="section-title" id="capabilities-title" data-reveal="rise">
+              Three ways I build.<br /><span class="text-dim">One standard.</span>
+            </h2>
+            <p class="section-lede" data-reveal="rise">
+              Clarity first. Every layer does a job — the interface explains, the data holds, and
+              the handover leaves nothing ambiguous.
+            </p>
+          </header>
+
+          <div class="cap-grid">
+            <article class="cap-card" data-tilt data-reveal="depth">
+              <div class="cap-card__visual" aria-hidden="true">
+                <div class="cap-card__glow"></div>
+                <div class="cap-card__layer cap-card__layer--back">
+                  <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M60 18 100 38 60 58 20 38Z" />
+                    <path d="M20 38v44l40 20 40-20V38" />
+                    <path d="M60 58v44" />
+                  </svg>
+                </div>
+                <div class="cap-card__layer cap-card__layer--front">
+                  <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="22" y="26" width="76" height="68" rx="7" />
+                    <path d="M22 42h76M34 34h2M42 34h2M50 34h2M36 58h30M36 70h44M36 82h24" />
+                  </svg>
+                </div>
+                <span class="cap-card__no">01</span>
+              </div>
+              <div class="cap-card__body">
+                <h3>Web system development</h3>
+                <p>
+                  Internal tools, dashboards, and reporting workflows built on Laravel and MySQL —
+                  modeled around the work your team already does.
+                </p>
+                <ul class="cap-card__tags" aria-label="Technologies">
+                  <li>Laravel</li>
+                  <li>MySQL</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="cap-card" data-tilt data-reveal="depth">
+              <div class="cap-card__visual" aria-hidden="true">
+                <div class="cap-card__glow"></div>
+                <div class="cap-card__layer cap-card__layer--back">
+                  <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="60" cy="60" r="36" />
+                    <path d="M60 24v72M24 60h72" />
+                  </svg>
+                </div>
+                <div class="cap-card__layer cap-card__layer--front">
+                  <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="20" y="30" width="80" height="60" rx="7" />
+                    <path d="M20 44h80M36 62h32M36 74h48" />
+                    <path d="m78 60 8 8-8 8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <span class="cap-card__no">02</span>
+              </div>
+              <div class="cap-card__body">
+                <h3>Business &amp; web platforms</h3>
+                <p>
+                  Marketing sites, landing pages, and small-business platforms that explain the
+                  offer clearly and make the next step obvious.
+                </p>
+                <ul class="cap-card__tags" aria-label="Technologies">
+                  <li>Tailwind</li>
+                  <li>WordPress</li>
+                  <li>E-commerce</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="cap-card" data-tilt data-reveal="depth">
+              <div class="cap-card__visual" aria-hidden="true">
+                <div class="cap-card__glow"></div>
+                <div class="cap-card__layer cap-card__layer--back">
+                  <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M34 22h40l18 18v58H34Z" />
+                    <path d="M74 22v18h18" />
+                  </svg>
+                </div>
+                <div class="cap-card__layer cap-card__layer--front">
+                  <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M36 30h48v60H36Z" />
+                    <path d="M46 46h28M46 58h28M46 70h18" />
+                    <path d="m66 84 6 6 12-14" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <span class="cap-card__no">03</span>
+              </div>
+              <div class="cap-card__body">
+                <h3>Thesis &amp; capstone systems</h3>
+                <p>
+                  Documented, defendable systems for students — built to spec, tested end to end,
+                  and handed over with setup notes and source.
+                </p>
+                <ul class="cap-card__tags" aria-label="Technologies">
+                  <li>Laravel</li>
+                  <li>Documentation</li>
+                  <li>QA</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section work" aria-labelledby="work-title">
+        <div class="shell">
+          <header class="section-head">
+            <p class="eyebrow" data-reveal="clip">
+              <span class="eyebrow__dot" aria-hidden="true"></span>03 — Selected work
+            </p>
+            <h2 class="section-title" id="work-title" data-reveal="clip">
+              Real systems.<br /><span class="text-dim">Shipped, used.</span>
+            </h2>
+            <p class="section-lede" data-reveal="clip">
+              Three systems designed and built end to end — a university analytics platform, an
+              internal request desk, and a personal finance app.
+            </p>
+          </header>
+
+          <div class="work-list">
+            <article class="work-row">
+              <div class="work-row__info">
+                <p class="work-row__meta" data-reveal="rise">
+                  <span class="work-row__index">01</span>
+                  <span>Universidad de Zamboanga</span>
+                  <span class="work-row__dot" aria-hidden="true"></span>
+                  <span>2026</span>
+                </p>
+                <h3 class="work-row__title" data-reveal="rise">Social Media Report</h3>
+                <p class="work-row__desc" data-reveal="rise">
+                  A reporting system that turns Facebook page activity into a clear monthly view —
+                  reach, engagement, and content performance in one dashboard.
+                </p>
+                <ul class="work-row__stack" data-reveal="rise" aria-label="Technologies">
+                  <li>Laravel</li>
+                  <li>MySQL</li>
+                  <li>Tailwind</li>
+                </ul>
+                <div class="work-row__actions" data-reveal="rise">
+                  <span class="chip">Client system</span>
+                  <a
+                    class="link-arrow"
+                    href="https://uzsocmed.freehosting.dev/login"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Live demo <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="work-row__media" data-reveal="clip">
+                <div class="work-frame">
+                  <div class="work-frame__bar" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                    <em>uzsocmed · dashboard</em>
+                  </div>
+                  <div class="work-frame__screen" data-parallax-media>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          /assets/work/smr-dashboard-800.avif 800w,
+                          /assets/work/smr-dashboard-1600.avif 1600w
+                        "
+                        sizes="(min-width: 1000px) 620px, 92vw"
+                      />
+                      <img
+                        src="/assets/work/smr-dashboard-1600.webp"
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Social Media Report dashboard showing monthly page metrics"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="work-row work-row--flip">
+              <div class="work-row__info">
+                <p class="work-row__meta" data-reveal="rise">
+                  <span class="work-row__index">02</span>
+                  <span>Universidad de Zamboanga</span>
+                  <span class="work-row__dot" aria-hidden="true"></span>
+                  <span>2026</span>
+                </p>
+                <h3 class="work-row__title" data-reveal="rise">UCO Task &amp; Request Desk</h3>
+                <p class="work-row__desc" data-reveal="rise">
+                  An internal request and task system for tracking work across offices — clear
+                  ownership, status history, and a single record of what was asked and answered.
+                </p>
+                <ul class="work-row__stack" data-reveal="rise" aria-label="Technologies">
+                  <li>Laravel</li>
+                  <li>React</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="work-row__actions" data-reveal="rise">
+                  <span class="chip chip--quiet">Private client system</span>
+                  <span class="work-row__note">Walkthrough on request</span>
+                </div>
+              </div>
+              <div class="work-row__media" data-reveal="clip">
+                <div class="work-frame">
+                  <div class="work-frame__bar" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                    <em>uco · request desk</em>
+                  </div>
+                  <div class="work-frame__screen" data-parallax-media>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          /assets/work/uco-admin-dashboard-800.avif 800w,
+                          /assets/work/uco-admin-dashboard-1600.avif 1600w
+                        "
+                        sizes="(min-width: 1000px) 620px, 92vw"
+                      />
+                      <img
+                        src="/assets/work/uco-admin-dashboard-1600.webp"
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Task and request desk dashboard with request counts"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="work-row">
+              <div class="work-row__info">
+                <p class="work-row__meta" data-reveal="rise">
+                  <span class="work-row__index">03</span>
+                  <span>Personal project</span>
+                  <span class="work-row__dot" aria-hidden="true"></span>
+                  <span>2026</span>
+                </p>
+                <h3 class="work-row__title" data-reveal="rise">Budget Desk</h3>
+                <p class="work-row__desc" data-reveal="rise">
+                  A personal finance app for daily spending and monthly savings — bills, budgets,
+                  and reports that stay readable at a glance.
+                </p>
+                <ul class="work-row__stack" data-reveal="rise" aria-label="Technologies">
+                  <li>Laravel</li>
+                  <li>React</li>
+                  <li>Tailwind</li>
+                </ul>
+                <div class="work-row__actions" data-reveal="rise">
+                  <span class="chip chip--quiet">Personal project</span>
+                  <span class="work-row__note">Local by design</span>
+                </div>
+              </div>
+              <div class="work-row__media" data-reveal="clip">
+                <div class="work-frame">
+                  <div class="work-frame__bar" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                    <em>budget desk · overview</em>
+                  </div>
+                  <div class="work-frame__screen" data-parallax-media>
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          /assets/work/budget-desk-dashboard-800.avif 800w,
+                          /assets/work/budget-desk-dashboard-1600.avif 1600w
+                        "
+                        sizes="(min-width: 1000px) 620px, 92vw"
+                      />
+                      <img
+                        src="/assets/work/budget-desk-dashboard-1600.webp"
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        decoding="async"
+                        alt="Budget Desk dashboard showing monthly budget and savings"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="contact__glow" aria-hidden="true"></div>
+        <div class="shell contact__inner">
+          <p class="eyebrow" data-reveal="rise">
+            <span class="eyebrow__dot" aria-hidden="true"></span>03 — Contact
+          </p>
+          <h2 class="contact__title" id="contact-title" data-reveal="clip">
+            Have an idea?<br /><span class="text-crimson">Let's make it real.</span>
+          </h2>
+          <p class="contact__lede" data-reveal="rise">
+            Tell me what you're building, what's getting in the way, and when you need it. I'll
+            reply with a clear next step.
+          </p>
+          <div class="contact__actions" data-reveal="rise">
+            <a
+              class="btn btn--primary"
+              href="mailto:zedvorastudio@gmail.com?subject=Project%20inquiry%20%E2%80%94%20ZEDVORA"
+            >
+              Email ZEDVORA <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="btn btn--ghost"
+              href="https://www.facebook.com/profile.php?id=61596320146334"
+              target="_blank"
+              rel="noopener"
+            >
+              Facebook <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <dl class="contact__facts" data-reveal="rise">
+            <div><dt>Email</dt><dd>zedvorastudio@gmail.com</dd></div>
+            <div><dt>Based</dt><dd>Zamboanga City, Philippines · remote</dd></div>
+            <div><dt>Availability</dt><dd>Open for select projects</dd></div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer__inner">
+        <p class="footer__wordmark" aria-hidden="true" data-reveal="clip">ZEDVORA</p>
+        <div class="footer__bottom">
+          <p>© <span data-year>2026</span> ZEDVORA. All rights reserved.</p>
+          <p>Ideas into Digital Experiences.</p>
+          <p>
+            <a href="/index.html">View V1 <span aria-hidden="true">↗</span></a> ·
+            <a href="/v3.html">View V3 <span aria-hidden="true">↗</span></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/v2/main.js"></script>
+  </body>
+</html>
